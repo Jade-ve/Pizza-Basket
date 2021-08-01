@@ -6,7 +6,7 @@
 ## Known Bugs
 {unknown bugs}
 ## Technologies Used
-{Html5,css}
+{Html5,css,java}
 ## Support and contact details
 {For any questions or feedback kindly contact me through my email; susan.jadeve@gmail.com}
 ### License
