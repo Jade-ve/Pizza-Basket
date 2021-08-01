@@ -9,6 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <style>
+    backG{
+      background-color: black;
+    }
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -125,14 +128,14 @@
     <div class="numbertext">1 / 6</div>
     <img src="https://media.istockphoto.com/photos/cheese-pizza-picture-id182832278?k=6&m=182832278&s=612x612&w=0&h=Wnr-jbZuYBXrCwSf-7q_czJ1jLl2rSh-mHPGq1Jwx_s=" style="width:50%">
     <right>
-      <p>Classic cheese & Mozzarella<br> ksh. 700</p>
+      <p>Classic cheese & Mozzarella</p>
     </right>
   </div>
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
     <img src="https://media.istockphoto.com/photos/hot-homemade-pepperoni-pizza-picture-id521403691?k=6&m=521403691&s=612x612&w=0&h=644DsEXT1-dsizk8_0pYiYtq4aluKcRuxd4t2Q0lp3k=" style="width:50%">
     <right>
-      <p>Tomato base topped with Pepperoni & Mozzarella<br> ksh. 750</p>
+      <p>Tomato base topped with Pepperoni & Mozzarella</p>
     </right>
   </div>
 
@@ -140,7 +143,7 @@
     <div class="numbertext">3 / 6</div>
     <img src="https://media.istockphoto.com/photos/homemade-veggie-pizza-with-mushrooms-peppers-picture-id842082336?k=6&m=842082336&s=612x612&w=0&h=mR1jnPIGSDqFxWLBjcjtHBCLKLbl1wAF0z9pl2VtZf8=" style="width:50%">
     <right>
-      <p>Peppers, Red Onion , Mushrooms & Olives<br>ksh. 750</p>
+      <p>Peppers, Red Onion , Mushrooms & Olives</p>
     </right>
   </div>
     
@@ -148,7 +151,7 @@
     <div class="numbertext">4 / 6</div>
     <img src="https://media.istockphoto.com/photos/pizza-with-mushrooms-picture-id1169939796?k=6&m=1169939796&s=612x612&w=0&h=MWRaccx1QTVcfhSemET_BCaPcxVVxN_enBoOrlpYF3U=" style="width:50%">
     <right>
-      <p>Ham & Mushroom<br>ksh. 750</p>
+      <p>Ham & Mushroom</p>
     </right>
   </div>
 
@@ -156,7 +159,7 @@
     <div class="numbertext">5 / 6</div>
     <img src="https://media.istockphoto.com/photos/cutting-pizza-picture-id140454048?k=6&m=140454048&s=612x612&w=0&h=G3lKyPEjPAQQLn64fqCpXzQfvFolytHYiUWRRBFo4_k=" style="width:50%">
     <right>
-      <p>Sausage, Pepperoni, Chicken & Bacon<br>ksh. 900</p>
+      <p>Sausage, Pepperoni, Chicken & Bacon</p>
     </right>
   </div>
     
@@ -164,7 +167,7 @@
     <div class="numbertext">6 / 6</div>
     <img src="https://media.istockphoto.com/photos/pizza-close-up-photo-meat-ingredients-ham-bacon-chicken-breast-picture-id865094206?k=6&m=865094206&s=612x612&w=0&h=vqdHoAKqkVr8V1KZvEfM7W2wjj-91tmiBBkQJMkEJR8=" style="width:50%">
     <right>
-      <p>BBQ base topped with Chicken & Bacon<br>ksh. 800</p>
+      <p>BBQ base topped with Chicken & Bacon</p>
     </right>
   </div>
     
@@ -196,6 +199,116 @@
     </div>
   </div>
 </div>
+
+<div class="container-fluid order" id="make-order">
+  
+  <div class="order-overlay">
+    <div class="controls-top text-center" id="Order-now"> 
+      <h2>Order Here</h2>
+    </div>
+    <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+    <div class="row">
+        <div class="col-sm-5">
+          <form action="">
+              <label for="select">Select Your Flavor</label>
+              <select class="browser-default custom-select custom-select-md mb-3 name">
+                <!-- <option selected value="choose">Choose your flavor</option> -->
+                <option value="Chicken Tikka">Classic Margherita</option>
+                <option value="PeriPeri Pizza">Pepperoni</option>
+                <option value="Raspberry Dessert Pizza">The Veggie One</option>
+                <option value="Chicken Alfredo Pizza">Ham & Mashroom</option>
+                <option value="Sunchoke Pizza">Meaty Feast</option>
+                <option value="Buffalo Chicken Sticks">Chicken & Bacon</option>
+              </select>
+              <br>
+            <label for="select">Select Size</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+              <option selected value="0">Select size here</option>
+              <option value="large">Large -- sh. 1200</option>
+              <option value="medium">Medium -- sh. 850</option>
+              <option value="small">Small -- sh. 600</option>
+            </select>
+            <br>
+            <label for="crust">Choose your favorite Crust!</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                  <option selected value="0">Select your preferred crust!</option>
+                <option value="Crispy">Crispy -- sh. 200</option>
+                <option value="Stuffed">Stuffed -- sh. 150</option>
+                <option value="Gluten-free">Gluten-free-- sh. 180</option>
+              </select>
+              <br>
+            <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                <label class="custom-control-label" for="Sausage">Sausage</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                <label class="custom-control-label" for="Bacon">Bacon</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+              </div>
+              <br><br>
+            <button type="submit" class="btn btn-orange proceed">Proceed</button>
+            
+          </form>
+        </div>
+        <div class="col-sm-7">
+          <div id="information">
+            <p>Your order will be processed and delivered within one hour of placing.</p>
+            <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+            <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+            <p id="regards">Regards, Management</p>
+          </div>
+          <div class="choise">
+            <h2>Your Order is:</h2>
+            <div id="your-orders">
+              <table class="table table-sm  pizzatable">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersmade">
+                  <tr>
+                    <td id="pizzaname"></td>
+                    <td id="pizzasize"></td>
+                    <td id="pizzacrust"></td>
+                    <td id="pizzatopping"></td>
+                    <td id="totals"></td>
+                  </tr>                  
+                </tbody>
+              </table>
+              <p id="pizzatotal"></p>
+              <p id="totalbill"></p> 
+              <p id="addedprice">Delivery will cost sh. 150</p>
+              <p id="finallmessage"></p>
+            </div>
+            <button class="btn btn-orange addPizza">Add Pizza</button>
+            <button class="btn btn-orange" id="checkout">Checkout</button>
+            <button class="btn btn-orange deliver">Home delivery?</button>
+          </div>
+          <div class="delivery">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                  <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                  <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                  <button class="btn btn-orange" id="final-order">Place Order</button>
+                </div>
+              </form>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
 <footer class="container-fluid text-center">
  <p>PIZZA BASKET <br>Copyright © 2021</p>
 </footer>
