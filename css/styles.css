@@ -1,6 +1,9 @@
 body{
     background-color: burlywood;
 }
+h2{
+    color: greenyellow;
+}
 right {
     float: right;
     width: 40%;
