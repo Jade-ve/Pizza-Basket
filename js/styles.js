@@ -38,7 +38,7 @@ function Getpizza( name,size,crust,topping, total ){
 }
 
 
-// proceed button
+
 $(document).ready(function(){
   // $("button.proceed").click(function(){
   //   $("button.proceed").hide();
