@@ -16,12 +16,7 @@
       border-radius: 0;
     }
 
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-
+  
     .carousel-inner img {
       width: 100%;
       /* Set width to 100% */
@@ -52,14 +47,15 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav" style="float: right;">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">ORDER</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#order">ORDER</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <nav id="home">
   <h1 style="text-align: center;" style="font-size: 50px;">PIZZA BASKET</h1>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -75,7 +71,7 @@
           src="https://media.istockphoto.com/photos/slice-of-pizza-cheese-crust-seafood-topping-sauce-with-bell-pepper-picture-id835271096?k=6&m=835271096&s=612x612&w=0&h=Q-Ue-Pchq7x9GanPLLJ8vEh6MTgoH3yZW1JXbuTUvDI="
           alt="Image">
         <div class="carousel-caption">
-          <h3>Enjoy the most delicios pizza with your<br> family and friends.</h3>
+          <h3>Enjoy the most delicious pizza with your<br> family and friends.</h3>
         </div>
       </div>
 
@@ -97,7 +93,8 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
+  </nav>
+  <nav id="about">
   <div class="container text-center">
     <h3>About Us</h3><br>
     <div class="row">
@@ -115,7 +112,7 @@
       </div>
       <div class="col-sm-4">
         <div class="well">
-          <p>If you wish to appy for a job at Pizza Basket,
+          <p style="background-color: black;">If you wish to appy for a job at Pizza Basket,
             kindly visit us at the Pizza Basket restaurant located at juction mall
             to be interviewed.</p>
         </div>
@@ -126,6 +123,7 @@
         </div>
       </div>
     </div>
+  </nav>
   </div><br>
   <h3 style="text-align:center">MENU</h3>
 
@@ -229,7 +227,7 @@
       </div>
     </div>
   </div>
-
+<nav id="order">
   <div class="container-fluid order" id="make-order">
 
     <div class="order-overlay">
@@ -340,16 +338,31 @@
       </div>
     </div>
   </div>
-
+</nav>
+<nav id="contact">
   <footer class="container-fluid text-center">
     <h3 style="color: greenyellow;" style="font-size: 45px;">PIZZA BASKET</h3>
     <div class="left">
-      <h4 style="color: white;" style="font-size: 40px;">Location</h4>
-      <p style="color: white;">Pizza Basket</p>
-      <p style="color: white;">Juction Mall - Ngong Road Kingara Road Thompson Area, North</p>
+    <style>
+      p{
+        color: white;
+      }
+      h4{
+        color: white;
+      }
+    </style>
+      <p style="font-size: 42px;"><u>Location</u></p>
+      <p>Pizza Basket</p>
+      <p>Juction Mall - Ngong Road Kingara Road Thompson Area, North</p>
     </div>
+    <div class="right">
+    <p style="font-size: 42px;"><u>Contact Us</u></p>
+    <p>Customer Services : 0220054679/8</p>
+    <p>For any questions or feedback, kindly contact : susanjadeve@gmail.com</p>
+    </div>
+    <h4 style="text-align: center;">Copyright © 2021</h4>
   </footer>
-
+</nav>
   <script src="js/styles.js"></script>
 </body>
 
