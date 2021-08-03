@@ -1,6 +1,9 @@
 body{
     background-color: burlywood;
 }
+.backG{
+  background-color: black;
+}
 h2{
     color: greenyellow;
 }
